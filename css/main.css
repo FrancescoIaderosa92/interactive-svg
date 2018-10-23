@@ -2,22 +2,25 @@
   transition: all .3s linear;
 }
 
-#bear:hover, #left-ear
-#bear:hover, #right-ear {
+#bear:hover #left-ear,
+#bear:hover #right-ear {
   transform: translateY(5px);
 }
 
 #left-eye, #right-eye {
   transform: translateX(5px);
+
+  animation: eyes 3s linear infinite;
 }
 
 @keyframes eyes {
 
   0% {
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 
   100% {
     transform: translateX(10px);
   }
+
 }
